@@ -26,3 +26,8 @@ El proposito de este repositorio es crear unos archivos de ayuda para realizar e
         - [x] [Alternativa] hacer threads para cada conexion, pero puede llegar a ser inviable.
 
 ## Funciones
+```javascript
+    function(){
+        console.log("hello")
+    }
+```
