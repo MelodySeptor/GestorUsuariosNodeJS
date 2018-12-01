@@ -1,4 +1,4 @@
-
+require('./dataBase')
 class Comprobador{
     constructor(){
 
@@ -18,11 +18,15 @@ class Comprobador{
      * son correctos. De momento se hará de forma sincrona.
      * @param {String} usuario 
      * @param {String} contrasenya 
+     * @param {DataBase} dataBase
      */
-    compruebaUsuario(usuario, contrasenya){
+    compruebaUsuario(usuario, contrasenya, dataBase){
         //Se conecta a la base de datos y mira si
         //la combinacion usuario-contrasenya es correcta.
-        return true;
+        dataBase.estableceConexion();
+        peticion = dataBase.crearPeticionEstandar(usuario);
+
+        return dataBase.existeUsuario(peticion, contrasenya)
     }
 
     compruebaCampoContrasenya(contenido){
