@@ -2,6 +2,9 @@
 ## Proposito
 El proposito de este repositorio es crear unos archivos de ayuda para realizar el login o el registro de un usuario con NodeJS. La idea es no tener que implementarlo cada vez que se desea crear una aplicación.
 
+## Como usarlo
+Se debe poner el objeto dentro de la sesión del usuario, de esta forma, aunque tenga 30 peticiones cada una de ellas tendra su propia estructura de datos.
+
 ## To-Do
     - [ ] Realizar conexión con Base de datos para el login.
         - [x] Pensar forma de setear los datos de la base de datos.
@@ -20,10 +23,6 @@ El proposito de este repositorio es crear unos archivos de ayuda para realizar e
         - [ ] Encontrar sitio para el servicio.
         - [ ] Implementar todos los metodos.
         - [ ] Hacer test de multiples conexiones a la vez y del funcionamiento.
-
-    - [ ] General.
-        - [-] Las funciones no deben devolver true o false, se debe almacenar en la sesion de cada usuario para que no haya problemas.
-        - [x] [Alternativa] hacer threads para cada conexion, pero puede llegar a ser inviable.
 
 ## Funciones
 ```javascript
